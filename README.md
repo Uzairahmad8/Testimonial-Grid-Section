@@ -1,2 +1,2 @@
 # Testimonial-Grid-Section
-https://gridcheer.netlify.app/
+gridcheer.netlify.app/
