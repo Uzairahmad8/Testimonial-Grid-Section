@@ -46,32 +46,32 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas:
-    "s1 s1 s2 s3"
-    "s4 s5 s5 s3";
+    "section1 section1 section2 section3"
+    "section4 section5 section5 section3";
   gap: 24px 30px;
 }
 
 .sectionOne {
-  grid-area: s1;
+  grid-area: section1;
   background-color: #733fc8;
   position: relative;
 }
 
 .sectionTwo {
-  grid-area: s2;
+  grid-area: section2;
   background-color: #48556a;
 }
 
 .sectionThree {
-  grid-area: s3;
+  grid-area: section3;
 }
 
 .sectionFour {
-  grid-area: s4;
+  grid-area: section4;
 }
 
 .sectionFive {
-  grid-area: s5;
+  grid-area: section5;
   background-color: #19202d;
 }
 
@@ -114,11 +114,11 @@ body {
   .mainContainer {
     grid-template-columns: 1fr;
     grid-template-areas:
-      "s1"
-      "s2"
-      "s4"
-      "s5"
-      "s3";
+      "section1"
+      "section2"
+      "section4"
+      "section5"
+      "section3";
   }
 
   .smallContainer,
