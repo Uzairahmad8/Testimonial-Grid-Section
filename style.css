@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #fff;
+  background-color: #ecf2f8;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+
+.largeContainer {
+  max-width: 540px;
+}
+
+.smallContainer {
+  max-width: 255px;
+}
+
+.border-radius {
+  border-radius: 15px;
+}
+
+.padding {
+  padding: 26px 32px;
+}
+
+.blackColor {
+  color: #000;
+}
+
+.bgWhite {
+  background-color: #fff;
+}
+
+.mainContainer {
+  max-width: 1160px;
+  padding-inline: 20px;
+  margin: 100px auto;
+  align-items: start;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    "s1 s1 s2 s3"
+    "s4 s5 s5 s3";
+  gap: 24px 30px;
+}
+
+.sectionOne {
+  grid-area: s1;
+  background-color: #733fc8;
+  position: relative;
+}
+
+.sectionTwo {
+  grid-area: s2;
+  background-color: #48556a;
+}
+
+.sectionThree {
+  grid-area: s3;
+}
+
+.sectionFour {
+  grid-area: s4;
+}
+
+.sectionFive {
+  grid-area: s5;
+  background-color: #19202d;
+}
+
+.quote {
+  position: absolute;
+  right: 50px;
+  top: 0;
+  z-index: 1;
+}
+
+.userID {
+  gap: 17px;
+}
+
+.userName h3 {
+  font-size: 13px;
+}
+
+.userName p {
+  font-size: 11px;
+  font-weight: 100;
+}
+
+.boldParagraph {
+  font-size: 20px;
+  margin: 18px auto 16px auto;
+  font-weight: 600;
+  position: relative;
+  z-index: 2;
+}
+
+.secondaryParagraph {
+  font-size: 13px;
+  line-height: 18px;
+  opacity: 0.8;
+  font-weight: medium;
+}
+
+@media (max-width: 970px) {
+  .mainContainer {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "s1"
+      "s2"
+      "s4"
+      "s5"
+      "s3";
+  }
+
+  .smallContainer,
+  .largeContainer {
+    max-width: 900px;
+  }
+
+  .quote {
+    right: 30px;
+  }
+}
